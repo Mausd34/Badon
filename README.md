@@ -1,16 +1,29 @@
-# Job-Ready Portfolio Projects
+# 🚀 Job-Ready CSE Portfolio
 
-A portfolio monorepo containing six practical CSE projects focused on AI/ML and business applications.
+Six practical portfolio projects covering AI/ML, customer support and business software. Each project has its own README and runnable Streamlit demo; reusable service modules are included for the core business logic.
 
 ## Projects
 
-1. AI Resume Analyzer
-2. Fraud Detection System
-3. AI Customer Support
-4. Property & BPO Management
-5. Blood Donation Platform
-6. Inventory & POS System
+| # | Project | Focus |
+|---|---|---|
+| 01 | AI Resume Analyzer | NLP, skill matching, job fit |
+| 02 | Fraud Detection System | ML, risk scoring |
+| 03 | AI Customer Support | NLP, intent/FAQ assistant |
+| 04 | Property & BPO Management | Operations, work orders, SLA |
+| 05 | Blood Donation Platform | Donor matching, availability |
+| 06 | Inventory & POS System | Stock, checkout, sales |
 
-Each project is independently runnable with Streamlit and includes a README.
+## Stack
+Python • Streamlit • Pandas • Scikit-learn • REST-ready service modules • Git/GitHub
 
-> Demo/educational implementations. Add production authentication, database hardening, validation, monitoring and deployment configuration before real-world use.
+## Run any project
+```bash
+cd <project-folder>
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Production upgrade path
+React + Django REST Framework/FastAPI + PostgreSQL + JWT + Docker + CI/CD + automated tests + monitoring.
+
+> These are portfolio/educational implementations. Do not use demo authentication, scoring or business rules as-is for production systems without security review, validation, privacy controls and proper testing.
