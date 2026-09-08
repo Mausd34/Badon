@@ -1,29 +1,34 @@
-# 🚀 Job-Ready CSE Portfolio
+# Badon — Job-Ready Full-Stack Portfolio
 
-Six practical portfolio projects covering AI/ML, customer support and business software. Each project has its own README and runnable Streamlit demo; reusable service modules are included for the core business logic.
+Six deployable portfolio applications in one repository. Each project is designed with a clear separation between frontend/backend, environment configuration, tests, and production deployment guidance.
 
 ## Projects
 
-| # | Project | Focus |
-|---|---|---|
-| 01 | AI Resume Analyzer | NLP, skill matching, job fit |
-| 02 | Fraud Detection System | ML, risk scoring |
-| 03 | AI Customer Support | NLP, intent/FAQ assistant |
-| 04 | Property & BPO Management | Operations, work orders, SLA |
-| 05 | Blood Donation Platform | Donor matching, availability |
-| 06 | Inventory & POS System | Stock, checkout, sales |
+1. AI Resume Analyzer — resume/job matching and skill-gap analysis.
+2. Fraud Detection — transaction risk scoring and fraud analytics.
+3. AI Customer Support — intent/FAQ support workflow with API-ready architecture.
+4. Property & BPO Management — properties, vendors, work orders and SLA operations.
+5. Blood Donation Platform — donor/request matching and city/blood-group filtering.
+6. Inventory & POS — products, stock, cart, checkout and low-stock workflow.
 
-## Stack
-Python • Streamlit • Pandas • Scikit-learn • REST-ready service modules • Git/GitHub
+## Deployment
 
-## Run any project
-```bash
-cd <project-folder>
-pip install -r requirements.txt
-streamlit run app.py
-```
+### Local
+- Python 3.12+
+- Node.js 20+
+- PostgreSQL 16+
+- Create `.env` from `.env.example` where provided.
+- Install backend dependencies and run migrations.
+- Install frontend dependencies and run the Vite development server.
 
-## Production upgrade path
-React + Django REST Framework/FastAPI + PostgreSQL + JWT + Docker + CI/CD + automated tests + monitoring.
+### Production
+Recommended deployment: frontend on Vercel/Netlify and backend + PostgreSQL on Render/Railway/Fly.io. Set environment variables in the hosting provider; never commit secrets.
 
-> These are portfolio/educational implementations. Do not use demo authentication, scoring or business rules as-is for production systems without security review, validation, privacy controls and proper testing.
+### CI/CD
+GitHub Actions configuration validates Python syntax/tests and frontend builds on pushes and pull requests.
+
+## Security
+Use HTTPS, JWT/session authentication, CORS allowlists, server-side validation, database transactions, rate limiting and secure secret management before exposing services publicly.
+
+## Portfolio note
+These applications are educational/job-portfolio projects. Replace demo data and hard-coded examples with production integrations before real-world use.
